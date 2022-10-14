@@ -507,7 +507,7 @@ function updateTitle() {
 	if (myChannel) {
 		title = "?" + myChannel;
 	} else {
-		title = "hack.chat";
+		title = "Hello World";
 	}
 
 	if (unread > 0) {
