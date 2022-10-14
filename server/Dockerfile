@@ -2,7 +2,7 @@ FROM node:16.18.0-alpine
 
 WORKDIR /chat-server
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
