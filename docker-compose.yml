@@ -1,0 +1,19 @@
+version: '3'
+services:
+  server:
+    container_name: chat-server
+    build: ./server
+    volumes:
+      - ./server/config/:/chat-server/config/
+      - /etc/localtime:/etc/localtime
+    ports:
+      - 6060:6060
+  
+  client:
+    container_name: chat-client
+    build: ./client
+    volumes:
+      - ./client:/usr/share/nginx/html/
+      - /etc/localtime:/etc/localtime
+    ports:
+      - 6061:80

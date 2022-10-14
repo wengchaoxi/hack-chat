@@ -40,7 +40,8 @@ export function parseNickname(core, data) {
     password = data.password;
   }
 
-  if (hash(password + core.config.tripSalt) === core.config.adminTrip) {
+  // if (hash(password + core.config.tripSalt) === core.config.adminTrip) {
+  if (password === core.config.adminTrip) {
     userInfo.uType = 'admin'; /* @legacy */
     userInfo.trip = 'Admin';
     userInfo.level = UAC.levels.admin;
