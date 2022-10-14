@@ -276,9 +276,9 @@ function notify(args) {
 }
 
 function join(channel) {
-	if (document.domain == 'hack.chat') {
-		// For https://hack.chat/
-		ws = new WebSocket('wss://hack.chat/chat-ws');
+	if (document.domain == 'chat.wengcx.top') {
+		// For https://chat.wengcx.top/
+		ws = new WebSocket('wss://chat.wengcx.top/chat-ws');
 	} else {
 		// for local installs
 		var protocol = location.protocol === 'https:' ? 'wss:' : 'ws:'
