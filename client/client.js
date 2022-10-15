@@ -110,7 +110,7 @@ var verifyNickname = function (nick) {
 
 var frontpage = [
 	"",
-	"Welcome, No message history is retained on the this server, DO WHAT THE FUCK YOU WANT TO !",
+	"Welcome, No message history is retained on this server, DO WHAT THE FUCK YOU WANT TO !",
 	"",
 	"---",
 	"> Random Channel: https://chat.wengcx.top/?" + Math.random().toString(36).substr(2, 8),
